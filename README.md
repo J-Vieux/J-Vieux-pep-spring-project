@@ -12,7 +12,7 @@ In our hypothetical micro-blogging or messaging app, any user should be able to 
 
 The following tables will be initialized in your project's built-in database upon startup using the configuration details in the application.properties file and the provided SQL script.
 
-### Account
+### Account 
 ```
 accountId integer primary key auto_increment,
 username varchar(255) not null unique,
