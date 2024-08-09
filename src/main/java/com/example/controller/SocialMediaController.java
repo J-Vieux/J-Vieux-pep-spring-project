@@ -38,8 +38,7 @@ public class SocialMediaController {
 
     @PostMapping("/register")
     public ResponseEntity registerAccount(@RequestBody Account account){
-        //Account userTaken = accountService.getAccount(account);
-        System.out.println(accountService.hasAccountName(account.getUsername()));
+
         if(!accountService.hasAccountName(account.getUsername())){
             return ResponseEntity.status(409).body(null);
         }
